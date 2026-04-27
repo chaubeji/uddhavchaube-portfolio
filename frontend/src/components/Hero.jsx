@@ -67,9 +67,8 @@ const Hero = () => {
         </div>
 
         {/* Stats */}
-        <div className="mt-20 md:mt-28 grid grid-cols-2 md:grid-cols-4 gap-y-10 gap-x-6 border-t border-b border-[#e3dccf] py-10">
+        <div className="mt-20 md:mt-28 grid grid-cols-3 gap-y-10 gap-x-6 border-t border-b border-[#e3dccf] py-10">
           {[
-            { v: profile.yearsExperience, l: "Years of Experience" },
             { v: profile.industries + "+", l: "Industries Operated" },
             { v: profile.ventures, l: "Active Companies" },
             { v: profile.acres, l: "Acres Under Mgmt." }

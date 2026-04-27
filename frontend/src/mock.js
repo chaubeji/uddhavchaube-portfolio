@@ -38,22 +38,6 @@ export const directorships = [
 
 export const verticals = [
   {
-    id: "real-estate",
-    title: "Real Estate",
-    summary: "Strategic investments and property management — including event spaces and land assets — focused on long-term value creation, asset optimization, and consistent returns.",
-    image: "https://customer-assets.emergentagent.com/job_2b9f3caf-1e6b-4dae-82de-f81e641a6dd1/artifacts/n47ytv0k_Screenshot%202026-04-27%20at%2010.43.26%E2%80%AFAM.png",
-    metric: "Property Portfolio",
-    metricValue: "Multi-asset"
-  },
-  {
-    id: "agriculture",
-    title: "Agriculture & Land Management",
-    summary: "Active involvement in large-scale farming and land utilization across 100+ acres in Uttar Pradesh — focused on productivity, sustainability, and long-term asset value.",
-    image: "https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=1200&q=80",
-    metric: "Land Under Management",
-    metricValue: "100+ Acres"
-  },
-  {
     id: "petroleum",
     title: "Petroleum",
     summary: "Operational and business experience in fuel and energy-related ventures — focused on efficiency, regulatory compliance, and sustainable growth.",
@@ -76,6 +60,22 @@ export const verticals = [
     image: "https://customer-assets.emergentagent.com/job_2b9f3caf-1e6b-4dae-82de-f81e641a6dd1/artifacts/7tclccqx_SBFXNR-17.jpg",
     metric: "Venue Format",
     metricValue: "Premium Events"
+  },
+  {
+    id: "real-estate",
+    title: "Real Estate",
+    summary: "Strategic investments and property management — including event spaces and land assets — focused on long-term value creation, asset optimization, and consistent returns.",
+    image: "https://images.pexels.com/photos/35764906/pexels-photo-35764906.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    metric: "Property Portfolio",
+    metricValue: "Multi-asset"
+  },
+  {
+    id: "agriculture",
+    title: "Agriculture & Land Management",
+    summary: "Active involvement in large-scale farming and land utilization across 100+ acres in Uttar Pradesh — focused on productivity, sustainability, and long-term asset value.",
+    image: "https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=1200&q=80",
+    metric: "Land Under Management",
+    metricValue: "100+ Acres"
   }
 ];
 
