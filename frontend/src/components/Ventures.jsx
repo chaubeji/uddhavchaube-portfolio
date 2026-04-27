@@ -1,5 +1,4 @@
 import React from "react";
-import { ArrowUpRight } from "lucide-react";
 import { verticals } from "../mock";
 
 const Ventures = () => {
@@ -36,21 +35,16 @@ const Ventures = () => {
                   className="w-full h-full object-cover"
                   loading="lazy"
                 />
-                <div className="absolute top-4 left-4 bg-[#f5f1ea]/95 backdrop-blur px-3 py-1.5 rounded-full text-[10px] tracking-[0.2em] uppercase text-[#1a1815]">
-                  0{i + 1} · {v.metric}
+                <div className="absolute top-4 left-4 bg-[#f5f1ea]/95 backdrop-blur px-3 py-1.5 rounded-full text-[10px] tracking-[0.25em] uppercase text-[#1a1815] font-medium">
+                  0{i + 1} / 05
                 </div>
               </div>
               <div className="p-7 flex flex-col flex-1">
-                <div className="flex items-start justify-between gap-4">
-                  <h3 className="font-serif text-2xl md:text-[26px] text-[#1a1815] leading-snug">{v.title}</h3>
-                  <div className="shrink-0 h-9 w-9 rounded-full border border-[#e3dccf] grid place-items-center text-[#1a1815] group-hover:bg-[#1a1815] group-hover:text-[#c9a26a] transition-colors duration-500">
-                    <ArrowUpRight size={16} />
-                  </div>
-                </div>
+                <h3 className="font-serif text-2xl md:text-[26px] text-[#1a1815] leading-snug">{v.title}</h3>
                 <p className="mt-3 text-[#4a463f] text-sm md:text-[15px] leading-relaxed">{v.summary}</p>
-                <div className="mt-6 pt-5 border-t border-[#e3dccf] flex items-center justify-between text-xs">
-                  <span className="tracking-[0.2em] uppercase text-[#8a6a3a]">{v.metric}</span>
-                  <span className="font-serif text-[#1a1815] text-base">{v.metricValue}</span>
+                <div className="mt-6 pt-5 border-t border-[#e3dccf]">
+                  <div className="text-[10px] tracking-[0.25em] uppercase text-[#8a6a3a]">{v.metric}</div>
+                  <div className="mt-1.5 font-serif text-[#1a1815] text-lg">{v.metricValue}</div>
                 </div>
               </div>
             </article>

@@ -44,7 +44,7 @@ const Hero = () => {
 
             <div className="mt-14 flex items-center gap-3 text-sm text-[#6b6760]">
               <MapPin size={14} className="text-[#c9a26a]" />
-              Based in India · Operating across Uttar Pradesh & beyond
+              Based in India
             </div>
           </div>
 
@@ -57,10 +57,6 @@ const Hero = () => {
                   alt={profile.name}
                   className="w-full h-[460px] md:h-[540px] object-cover"
                 />
-              </div>
-              <div className="absolute -bottom-6 -left-6 bg-[#f5f1ea] border border-[#e3dccf] rounded-xl px-5 py-4 shadow-lg">
-                <div className="text-[10px] tracking-[0.25em] uppercase text-[#6b6760]">Currently building</div>
-                <div className="font-serif text-lg text-[#1a1815] mt-1">Cold Chain Logistics</div>
               </div>
             </div>
           </div>

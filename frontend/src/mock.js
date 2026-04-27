@@ -58,14 +58,14 @@ export const verticals = [
     title: "Hospitality · Marriage Garden",
     summary: "Owning and operating a premium marriage garden in Uttar Pradesh — catering to large-scale social and corporate events with a focus on experience, efficient operations, and high utilization.",
     image: "https://customer-assets.emergentagent.com/job_2b9f3caf-1e6b-4dae-82de-f81e641a6dd1/artifacts/7tclccqx_SBFXNR-17.jpg",
-    metric: "Venue Format",
-    metricValue: "Premium Events"
+    metric: "Asset Type",
+    metricValue: "Marriage Garden"
   },
   {
     id: "real-estate",
     title: "Real Estate",
     summary: "Strategic investments and property management — including event spaces and land assets — focused on long-term value creation, asset optimization, and consistent returns.",
-    image: "https://images.pexels.com/photos/35764906/pexels-photo-35764906.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    image: "https://customer-assets.emergentagent.com/job_uddhav-ventures/artifacts/rpng0g1w_Screenshot%202026-04-27%20at%201.28.31%E2%80%AFPM.png",
     metric: "Property Portfolio",
     metricValue: "Multi-asset"
   },
@@ -74,7 +74,7 @@ export const verticals = [
     title: "Agriculture & Land Management",
     summary: "Active involvement in large-scale farming and land utilization across 100+ acres in Uttar Pradesh — focused on productivity, sustainability, and long-term asset value.",
     image: "https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=1200&q=80",
-    metric: "Land Under Management",
+    metric: "Land Footprint",
     metricValue: "100+ Acres"
   }
 ];
