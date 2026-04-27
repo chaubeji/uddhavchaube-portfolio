@@ -1,0 +1,14 @@
+[build]
+  base = "frontend"
+  publish = "build"
+  command = "yarn build"
+
+[build.environment]
+  NODE_VERSION = "20"
+  CI = "false"
+
+# SPA fallback — every unknown path serves index.html so React Router handles it
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
