@@ -1,5 +1,6 @@
 import React from "react";
 import { verticals } from "../mock";
+import SafeImage from "./SafeImage";
 
 const Ventures = () => {
   return (
@@ -29,11 +30,11 @@ const Ventures = () => {
               className="card-soft group bg-white rounded-2xl overflow-hidden border border-[#e3dccf] flex flex-col"
             >
               <div className="img-zoom h-64 lg:h-72 bg-[#1a1815]/5 relative">
-                <img
+                <SafeImage
                   src={v.image}
                   alt={v.title}
                   className="w-full h-full object-cover"
-                  loading="lazy"
+                  fallbackLabel={v.title}
                 />
                 <div className="absolute top-4 left-4 bg-[#f5f1ea]/95 backdrop-blur px-3 py-1.5 rounded-full text-[10px] tracking-[0.25em] uppercase text-[#1a1815] font-medium">
                   0{i + 1} / 05

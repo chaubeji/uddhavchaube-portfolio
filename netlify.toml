@@ -12,3 +12,49 @@
   from = "/*"
   to = "/index.html"
   status = 200
+
+# ---------------------------------------------------------
+# Security headers for every response
+# ---------------------------------------------------------
+[[headers]]
+  for = "/*"
+  [headers.values]
+    # Stop clickjacking (nobody can embed this site in an iframe)
+    X-Frame-Options = "SAMEORIGIN"
+    # Stop MIME-type sniffing attacks
+    X-Content-Type-Options = "nosniff"
+    # Enforce HTTPS for a year (incl. subdomains, preload eligible)
+    Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload"
+    # Don't leak full referrer URLs to other sites
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    # Restrict device APIs we don't use
+    Permissions-Policy = "camera=(), microphone=(), geolocation=(), payment=(), usb=()"
+    # XSS auditor for older browsers
+    X-XSS-Protection = "1; mode=block"
+
+# Cache static assets aggressively (CRA hashes filenames)
+[[headers]]
+  for = "/static/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.js"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.css"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# Never cache index.html so new deploys show up immediately
+[[headers]]
+  for = "/index.html"
+  [headers.values]
+    Cache-Control = "no-cache, no-store, must-revalidate"
+
+[[headers]]
+  for = "/"
+  [headers.values]
+    Cache-Control = "no-cache, no-store, must-revalidate"

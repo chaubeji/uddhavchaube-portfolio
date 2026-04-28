@@ -1,6 +1,7 @@
 import React from "react";
 import { ArrowDownRight, MapPin } from "lucide-react";
 import { profile } from "../mock";
+import SafeImage from "./SafeImage";
 
 const Hero = () => {
   return (
@@ -52,10 +53,11 @@ const Hero = () => {
             <div className="relative">
               <div className="absolute -inset-3 rounded-[1.5rem] bg-[#1a1815]/5 -z-10" />
               <div className="img-zoom rounded-[1.25rem] overflow-hidden border border-[#e3dccf] shadow-[0_30px_80px_-30px_rgba(26,24,21,0.35)]">
-                <img
+                <SafeImage
                   src={profile.photo}
                   alt={profile.name}
                   className="w-full h-[460px] md:h-[540px] object-cover hero-photo"
+                  fallbackLabel="Portrait"
                 />
               </div>
             </div>
