@@ -45,7 +45,7 @@ const Approach = () => {
               Practical over <em className="italic text-[#8a6a3a]">theoretical.</em>
             </h2>
             <p className="mt-6 text-[#4a463f] leading-relaxed">
-              A practical approach to entrepreneurship — focused on execution, profitability, and real-world impact rather than just ideas.
+              A practical approach to entrepreneurship, focused on execution, profitability, and real-world impact rather than just ideas.
             </p>
 
             <ul className="mt-8 space-y-4">

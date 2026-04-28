@@ -16,7 +16,7 @@ const Directorships = () => {
               Strategic decision-making across <em className="italic text-[#8a6a3a]">multiple ventures.</em>
             </h2>
             <p className="mt-6 text-[#4a463f] leading-relaxed max-w-md">
-              Actively involved in growth planning, governance and operational oversight — ensuring each entity scales with discipline and compliance.
+              Actively involved in growth planning, governance and operational oversight, ensuring each entity scales with discipline and compliance.
             </p>
           </div>
 

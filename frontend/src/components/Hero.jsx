@@ -22,7 +22,7 @@ const Hero = () => {
             </h1>
 
             <p className="mt-8 max-w-xl text-[#4a463f] text-base md:text-lg leading-relaxed">
-              I&apos;m {profile.name.split(" ")[0]} — an entrepreneur turning operational gaps in
+              I&apos;m {profile.name.split(" ")[0]}, an entrepreneur turning operational gaps in
               logistics, real estate, petroleum and hospitality into practical, profitable ventures.
             </p>
 
@@ -55,7 +55,7 @@ const Hero = () => {
                 <img
                   src={profile.photo}
                   alt={profile.name}
-                  className="w-full h-[460px] md:h-[540px] object-cover"
+                  className="w-full h-[460px] md:h-[540px] object-cover hero-photo"
                 />
               </div>
             </div>
@@ -63,7 +63,7 @@ const Hero = () => {
         </div>
 
         {/* Stats */}
-        <div className="mt-20 md:mt-28 grid grid-cols-3 gap-y-10 gap-x-6 border-t border-b border-[#e3dccf] py-10">
+        <div className="stats-grid mt-20 md:mt-28 grid grid-cols-3 gap-y-10 gap-x-6 border-t border-b border-[#e3dccf] py-10">
           {[
             { v: profile.industries + "+", l: "Industries Operated" },
             { v: profile.ventures, l: "Active Companies" },

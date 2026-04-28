@@ -141,7 +141,7 @@ const Contact = () => {
               >
                 {state.succeeded ? (
                   <>
-                    <CheckCircle2 size={16} /> Sent — thank you
+                    <CheckCircle2 size={16} /> Sent. Thank you
                   </>
                 ) : state.submitting ? (
                   <>Sending…</>
